@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeHelp Application</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="margin-top: 0px;"> <!-- 消除網頁最上方的空白 -->
+    <h3 class="topic" style="margin:0px auto">WeHelp 申請表</h3>
+    <h3 class="topic" style="margin:0px auto 8px">
+        當您閱讀至藍色字體時,對其
+        <span id="hint" 
+        onclick="surprise();"
+        onmouseover="hint(this);" 
+        onmouseout="hintChange(this);"
+        >點擊</span>
+        會有意想不到的效果
+    </h3>
+    <div class="topic">
+        <span>1.兩百字內個人簡介:</span>
+        <div class="content">
+            <!--
+                &ensp; 半形空格
+                &emsp; 全形空格
+            -->
+            &emsp;我是洪宇昇,目前在三星物產任職是一名結構工程師,
+            從2020年初開始投身於營建業,在2022年中準備報考在職專班,
+            選擇報考中央大學與交通大學,將於今年9月就讀交大工管所。
+            </br>
+            </br>
+            &emsp;在準備報考的期間開始思考未來想要什麼樣的生活,
+            發現在科技業相對容易找到喜歡的工作環境,
+            我抱著嘗試的心態在2022年末報名台大程式訓練Python班,
+            也開啟了往軟體業邁進的起點。
+        </div>
+    </div>
+    <div class="topic">
+        2.為了成為軟體工程師，曾做過什麼努力?若有具體專案作品請分享給我們。
+        <div class="content">
+            &emsp;報考在職專班時也同時報名交大資工所,交大資工所的考科是計算機概論,
+            計算機概論對我而言無非是一門陌生的科目,
+            按照交大開出的書單購入一本計算機概論也同時練習歷屆考古題,閱讀與練習的期間深刻
+            <span id="hint"
+            onclick="show(0);"
+            onmouseover="hint(this);"
+            onmouseout="hintChange(this);"
+            >體會到</span>
+            <span id="mark">轉職是一件不容易的事情。</span>
+            </br>
+            </br>
+            &emsp;報考碩班告一個段落後我報名了台大系統訓練班Python課程,
+            學習Python就像發現新大陸,每天都很期待周末可以到學校學習新知識,
+            而課程的尾聲需要準備期末報告,當時決定做網路爬蟲但是對HTML完全沒有概念,
+            偶然發現彭彭老師的Selenium網路爬蟲教程,下了一番苦心如期完成期末報告,
+            也因此萌生學習JavaScript想法,故在今年2月報名台大系統訓練班JavaScript課程。
+            </br>
+            </br>
+            &emsp;時至今日除了上述兩種程式語言也學了基礎的C與C++,目前正在學習資料結構同時也會在Leetcode找題目練習,
+            此時與去年相比我的心中已有明確的
+            <span id="hint"
+            onclick="show(1);"
+            onmouseover="hint(this);" 
+            onmouseout="hintChange(this);"
+            >目標:
+            </span>
+            <span id="mark">「轉職!我要轉職!我要排除萬難轉職」</span>
+        </div>
+    </div>
+    <div class="topic">
+        3.如果參與這個計畫，會怎麼安排學習時間?
+        <div class="content">
+            &emsp;在台大學JavaScript時曾向彭彭老師諮詢自己的狀況,
+            老師給出的建議是第一階段我用下班時間學習基本上沒有問題,
+            但後續的階段建議完全投入。
+            </br>
+            </br>
+            &emsp;與指導教授討論未來的研究方向時也提出轉職的想法,預計在未來會選修他所課程,
+            也考慮過會因此導致沒辦法準時畢業的狀況,但我認為學校是擁有最多資源的地方,
+            並向指導教授表示:「我非常樂意準時畢業,但更希望透過學校的資源學習需要的知識與工具。」,
+            指導教授表示認同外也提出建議修習的課程,
+            同時提出未來的研究方向可以朝我有興趣的領域做研究。
+            </br>
+            </br>
+            &emsp;規劃直至8月離職前利用工作之餘投入一階段課程,
+            <span id="hint"
+            onclick="show(2);"
+            onmouseover="hint(this);"
+            onmouseout="hintChange(this);"
+            >後續二至三階段將</span>
+            <span id="mark">全職投入Wehelp計畫與學校課業,</span>
+            若有幸參與Wehelp計畫至第三階段結束理應有自己的專案,
+            但我認為在投入下一份工作前除了專案還能做其他準備,
+            業界中相對薪資高的公司面試都會考白板題,
+            參與Wehelp期間利用閒暇之餘練習Leetcode題目也在我的規劃中。
+        </div>
+    </div>
+
+    <div class="topic">
+        4.是否有想要加入的軟體公司?為什麼想加入該公司?
+        <div class="content">
+            &emsp;目前任職於外商公司故希望未來能就業於
+            <span id="hint"
+            onclick="show(3);"
+            onmouseover="hint(this);"
+            onmouseout="hintChange(this);"
+            >外商公司,</span>
+            <span id="mark">趨勢科技(Trend Micro)</span>
+            在業界多數人認為是一間適合當外商跳板的公司,
+            並且該公司目前有釋出資料工程師的職缺,也符合想做資料分析與其相關研究的我,
+            在眾多公司中不只趨勢科技符合我的期待,並且就業市場每年都會改變,
+            但我秉持著做資料分析與前進外商這兩個想法,目前最符合我期待的非趨勢科技莫屬。
+        </div>
+    </div>
+
+    <div class="topic">
+        5.請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒?
+        <div class="content">
+            &emsp;下定決心轉職到準備學習其轉職需要的
+            過程中周圍必然有很多聲音阻勸你,其中不乏: "你現在的工作不是好好的嗎,還且還是外商耶!"、
+            "軟體業也沒有你想的那麼好"、"你知道科技業開始裁員了嗎?"
+            <a style="color:blue"
+            href="https://youtube.com/shorts/z1HEPz6vhxw?feature=share"
+            target="_blank"
+            >每次聽到這些聲音心中難免會害怕與動搖,但也一直告訴自己要堅持的想法。
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // 顯示全部 div 內容
+        let allDiv = document.querySelectorAll('div');
+        function surprise(){
+            for(let i=0; i<allDiv.length; i++){
+                allDiv[i].style.display = "block";
+            }
+        }
+
+        let showText = document.querySelectorAll('#mark');
+        function show(flag) {
+            showText[flag].style.visibility = "visible";
+        }
+        // let hintText = document.querySelectorAll('#hint');
+        function hint(eve) {
+            eve.style.color = 'red';
+        }
+
+        function hintChange(eve) {
+            eve.style.color = 'blue';
+        }
+
+    </script>
+
+</body>
+
+</html>
