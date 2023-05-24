@@ -1,0 +1,56 @@
+h3{
+    display:flex; /* 內部區塊水平排列 */
+    text-align:center; /* 文字置中 */
+    justify-content:center; /* 控制水平置中 */
+    align-content: center; /* 控制垂直置中 */
+    flex-wrap:wrap;/* 允許內部區塊在必要時刻往下排列 */
+    background-color:rgba(21, 70, 160, 0.65);
+    width:100%;
+    padding:20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+div{
+    display: none;
+}
+.topic{
+    display:flex; /* 內部區塊水平排列 */
+    text-align:center; /* 文字置中 */
+    justify-content:center; /* 控制水平置中 */
+    align-content: center; /* 控制垂直置中 */
+    flex-wrap:wrap;/* 允許內部區塊在必要時刻往下排列 */
+    /* background-color:rgba(54, 143, 86, 0.65); */
+    margin: 0px auto 8px; /* 對應至 上 (左右) 下 */
+    width:66%;
+    font-size: 32px;
+    font-weight: bold;
+    /*
+        字體選擇, 瀏覽器會依順序字型名稱去找循並套用使用者電腦內擁有的該字型，
+        若有則套用! 若無則找下一個
+    */
+    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti,
+                sans-serif, serif;
+}
+.content{
+    /* flex-wrap:wrap;允許內部區塊在必要時刻往下排列 */
+    /* justify-content:center; 控制水平置中 */
+    /* margin: 6px 0px; */
+    line-height: 24px; /* 行高 */
+    text-align: left;
+    padding: 5px;
+    border-top: rgb(209, 215, 24) 3px solid;
+    /* border-color: rgb(209, 215, 24); */
+    font-size: 24px;
+}
+#mark{
+    color:rgb(160, 72, 237);
+    font-weight: bold;
+    visibility: hidden; /* 隱藏字 */
+    /* display: none; 可以使包括容器本身在內的東西都消失 */
+}
+
+#hint{
+    color:blue;
+}
